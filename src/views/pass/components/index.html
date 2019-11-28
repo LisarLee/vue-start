@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+    <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/video-dev/clappr-rtmp-plugin@latest/dist/rtmp.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+</head>
+
+<body>
+    <div id="player"></div>
+    <script>
+        var player = new Clappr.Player({
+            source: "./vedio.smil",
+            // source: "rtmp://58.200.131.2:1935/livetv/hunantv",
+            // <!-- source: "http://www.streambox.fr/playlists/test_001/stream.m3u8" -->
+            parentId: "#player",
+            plugins: { 'playback': [RTMP], 'core': [LevelSelector] },
+            rtmpConfig: {
+                swfPath: 'RTMP.swf',
+                scaling: 'stretch',
+                playbackType: 'live',
+                bufferTime: 1,
+                startLevel: 0
+            },
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- <html>
+
+<head>
+
+  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+</head>
+
+<body>
+    <div id="player"></div>
+    <script>
+        var player = new Clappr.Player({
+            // source: "http://wangchongfeng.top/test.mp4",
+            source: "rtmp://58.200.131.2:1935/livetv/hunantv",
+    //   < !--source: "http://www.streambox.fr/playlists/test_001/stream.m3u8" -- >
+        parentId: "#player",
+            // plugins: { 'playback': [RTMP], 'core': [LevelSelector] },
+            rtmpConfig: {
+            swfPath: 'Player.swf',
+            scaling: 'stretch',
+            playbackType: 'live',
+            bufferTime: 1,
+            startLevel: 0
+        },
+  });
+    </script>
+</body>
+
+</html> -->
