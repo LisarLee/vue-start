@@ -8,13 +8,14 @@
 <script>
 import navMenu from './navMenu.vue';
 export default {
-  name:"layout",
+  name: "layout",
   components: {
     navMenu,
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      mini: 'mobilemini埋下冲突'
     }
   }
 }
@@ -22,5 +23,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-
 </style>
