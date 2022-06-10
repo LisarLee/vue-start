@@ -49,10 +49,7 @@ export default {
   },
   methods: {
     changNav(val) {
-      this.activeMenu = val
-      window.localStorage.setItem('navMenu',val)
-      console.log(val);
-      
+      this.vConsole.log('1234', 1)
     }
   }
 };

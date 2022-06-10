@@ -3,10 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import vConsole from '../build/vConsole';
 
 import elementUI from 'element-ui';
 Vue.use(elementUI)
 import "element-ui/lib/theme-chalk/index.css"
+Vue.prototype.vConsole = vConsole
 
 // import MPVcontroller from 'mpv-controller';
 // Vue.prototype.$MPVcontroller = MPVcontroller
