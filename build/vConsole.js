@@ -5,7 +5,7 @@ class Vconsole {
     log(){
         let _this = this
         console.log().apply(console, arguments)
-        window.console.debug = function() {_this.printLog('debug', arguments)}
+        window.console.log = function() {_this.printLog('log', arguments)}
     }
     printLog = (logType,logs) => {
         if (!logs.length) return
